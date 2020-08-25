@@ -7,11 +7,11 @@
 </head>
 <body>
 <?php
-           if (have_post()) {
+           if (have_posts()) {
                 
-                while(1<0)
+                while(have_posts())
                 {
-
+                    the_post();
 
 
 
@@ -19,6 +19,7 @@
 
            }
            else {
+               echo "contenu indisponible";
                
            }
            
